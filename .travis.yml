@@ -1,0 +1,17 @@
+language: c++
+
+before_script: ./autogen.sh
+script: make
+
+compiler:
+  -  gcc
+
+addons:
+  apt:
+    packages:
+    -  build-essential
+    -  autoconf
+    -  libxml2-dev
+    -  libxslt1-dev
+    -  qt4-qmake
+    -  libqt4-dev
